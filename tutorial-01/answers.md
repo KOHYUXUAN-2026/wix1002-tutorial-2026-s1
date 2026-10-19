@@ -175,7 +175,7 @@ flowchart TD
     A([Start]) --> B[/Read length and width/]
     B --> C{length <= 0 OR width <= 0}
     C --> |Yes| D[/Display "Invalid dimensions"/]
-    C --> |No| E[perimeter = 2*(length + width)]
+    C --> |No| E["perimeter = 2*(length + width)"]
     E --> F[/Display perimeter/]
     D --> G([Stop])
     F --> G
@@ -212,7 +212,7 @@ Stop
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[min = RANDOM_INTEGER(0, 100)]
+    A([Start]) --> B["min = RANDOM_INTEGER(0, 100)"]
     B --> C[/Display min/]
     C --> D[count=1]
     D --> E{count <10?}
@@ -262,7 +262,7 @@ Stop
 flowchart TD
     A([Start]) --> B[even = 0, odd = 0, count = 0 ]
     B --> C{count < 10?}
-    C --> |Yes| D[n = RANDOM_INTEGER(10, 100)]
+    C --> |Yes| D["n = RANDOM_INTEGER(10, 100)"]
     D --> E[/Display n/]
     E --> F{n % 2 == 0?}
     F --> |Yes| G[even=even + 1]
@@ -313,7 +313,7 @@ Stop
 flowchart TD
     A([Start]) --> B[/read sentence/]
     B --> C[uCount = 0, mCount = 0, index = 0]
-    C --> D{index < LENGTH(sentence)?}
+    C --> D{"index < LENGTH(sentence)?"}
     D --> |Yes| E[charac = CHARACTER_AT(sentence, index)]
     E --> F{charac = 'U'?}
     F --> |Yes| G[uCount = uCount + 1]
@@ -364,7 +364,7 @@ flowchart TD
     C --> D[Split pageText into words]
     D --> E[count = 0, position = 0]
     E --> F{position < LENGTH words?}
-    F -->|Yes| G{words[position] = keyword?}
+    F -->|Yes| G{"words[position] = keyword?"}
     G -->|Yes| H[count = count + 1]
     G -->|No| I[position = position + 1]
     H --> I
@@ -442,7 +442,7 @@ Stop
 flowchart TD
     A([Start]) --> B[Generate five random integers]
     B --> C[Sort numbers in ascending order]
-    C --> D[index = LENGTH(numbers) - 1]
+    C --> D["index = LENGTH(numbers) - 1"]
     D --> E{index >= 0?}
     E -->|Yes| F[/Display numbers[index]/]
     F --> G[index = index - 1]
@@ -486,7 +486,7 @@ Stop
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[target = RANDOM_INTEGER(1, 100)]
+    A([Start]) --> B["target = RANDOM_INTEGER(1, 100)"]
     B --> C[attempts = 0]
     C --> D[/Read guess/]
     D --> E{guess < 1 OR guess > 100?}
