@@ -216,7 +216,7 @@ flowchart TD
     B --> C[/Display min/]
     C --> D[count=1]
     D --> E{count <10?}
-    E --> |Yes| F[n = RANDOM_INTEGER(0, 100)]
+    E --> |Yes| F["n = RANDOM_INTEGER(0, 100)"]
     F --> G[/Display n/]
     G --> H{n < min?}
     H --> |Yes| I[min = n]
@@ -271,7 +271,7 @@ flowchart TD
     G --> I
     I --> C
     C --> |No| J[/Display even, odd/]
-    J --> K([Stop)]
+    J --> K([Stop])
 ```
 
 ## Part II
@@ -314,7 +314,7 @@ flowchart TD
     A([Start]) --> B[/read sentence/]
     B --> C[uCount = 0, mCount = 0, index = 0]
     C --> D{"index < LENGTH(sentence)?"}
-    D --> |Yes| E[charac = CHARACTER_AT(sentence, index)]
+    D --> |Yes| E["charac = CHARACTER_AT(sentence, index)"]
     E --> F{charac = 'U'?}
     F --> |Yes| G[uCount = uCount + 1]
     F --> |No| H{charac = 'M'?}
@@ -444,7 +444,7 @@ flowchart TD
     B --> C[Sort numbers in ascending order]
     C --> D["index = LENGTH(numbers) - 1"]
     D --> E{index >= 0?}
-    E -->|Yes| F[/Display numbers[index]/]
+    E -->|Yes| F[/"Display numbers[index]"/]
     F --> G[index = index - 1]
     G --> E
     E -->|No| H([Stop])
