@@ -26,22 +26,22 @@ System.out.println("\"SDN\" - Software-defined networking");
 
 ### a.
 ```java
-System.out.println("Java Programming"）；
+System.out.println("Java Programming")；
 ```
 
 ### b.
 ```java
-System.out.println("Introduction to Java!"）；
+System.out.println("Introduction to Java!")；
 ```
 
 ### c.
 ```java
-System.out.println("\\t is the horizontal tab character"）；
+System.out.println("\\t is the horizontal tab character")；
 ```
 
 ### d.
 ```java
-System.out.println("Java is case sensitive!"）；
+System.out.println("Java is case sensitive!")；
 ```
 
 
