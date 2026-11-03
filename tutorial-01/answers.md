@@ -284,7 +284,7 @@ flowchart TD
 
 | Input | Process | Output |
 |---|---|---|
-|one sentence from user|Examine each character and count the occurrences of uppercase U and uppercase M | |
+|one sentence from user|Examine each character and count the occurrences of uppercase U and uppercase M |occurrences of uppercase U and uppercase M  |
 
 **Pseudocode**
 
